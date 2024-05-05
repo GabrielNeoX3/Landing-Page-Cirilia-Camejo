@@ -3,7 +3,7 @@
 O projeto teve como foco criar uma <strong>Landing page</strong> para uma profissional de nutrição.
 
 
-<img width="450px" heigth="500px" src="/LandingPageNutricionista-master/imgs/landing-page.png" alt="imagem seção inicial da landing page">
+<img width="450px" heigth="500px" src="/imgs/landing-page.png" alt="imagem seção inicial da landing page">
 
 <strong>Acesse: </strong>
 
