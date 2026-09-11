@@ -293,10 +293,11 @@ header {
 }
 
 .sobre-imagem {
-  border-radius: var(--raio);
-  box-shadow: var(--sombra);
   width: 100%;
-  object-fit: cover;
+  max-width: 380px;      /* controla o tamanho exibido */
+  object-fit: contain;
+  border-radius: 0;
+  box-shadow: none;      /* sem sombra de retângulo */
 }
 
 /* ---------- 11. Depoimentos ---------- */
