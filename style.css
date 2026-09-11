@@ -244,6 +244,23 @@ header {
   box-shadow: var(--sombra);
 }
 
+/* Hero: container com altura controlada */
+.hero-imagem-wrapper {
+  aspect-ratio: 4 / 5;      /* mantém a proporção retrato da foto */
+  max-height: 560px;        /* trava a altura no desktop */
+  width: 100%;
+  border-radius: var(--raio);
+  box-shadow: var(--sombra);
+  overflow: hidden;         /* corta o excesso sem deformar */
+}
+
+.hero-imagem {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;        /* preenche cortando, NÃO esticando */
+  object-position: center top; /* prioriza o rosto, não o jaleco */
+}
+
 /* ---------- 9. Cards ---------- */
 .cards {
   display: grid;
