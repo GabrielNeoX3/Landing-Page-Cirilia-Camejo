@@ -1,189 +1,202 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Landing page da Nutricionista Cirília Camejo. Agende sua consulta e conheça nossos serviços de nutrição.">
-    <meta name="keywords" content="nutrição, saúde, Cirília Camejo, consulta, alimentação saudável">
-    <title>Cirília nutricionista</title>
-    <script src="https://unpkg.com/feather-icons"></script>
-    <link rel="icon" type="image/png" href="imgs/icons/icon aba.png" />
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@500&family=Inter:wght@300&family=Poppins&display=swap"
-        rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Nutrição clínica e esportiva em Bagé-RS e online. Acompanhamento individualizado para emagrecimento, reeducação alimentar e desempenho esportivo." />
+  <title>Cirília Camejo · Nutrição Clínica e Esportiva</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-    <header>
-        <nav aria-label="Menu principal">
-            <a href="#top-zero" aria-label="Ir para o início">
-                <img src="./imgs/logo_cirilia_transparente.png" alt="Logo da Nutricionista Cirília Camejo" />
-            </a>
-            <ul>
-                <li><a href="#top-zero"><i data-feather="home"></i> Início</a></li>
-                <li><a href="#container-aboutMe"><i data-feather="user"></i> Sobre mim</a></li>
-                <li><a href="#container-depositions"><i data-feather="message-circle"></i> Depoimentos</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main>
-        <div id="top-zero" tabindex="-1">início</div>
+  <!-- ============ CABEÇALHO ============ -->
+  <header>
+    <nav class="nav container" aria-label="Navegação principal">
+      <a href="#" class="nav-logo">Cirília Camejo</a>
+      <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false" onclick="toggleMenu()">☰</button>
+      <ul class="nav-links" id="menu">
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#como-funciona">Como funciona</a></li>
+        <li><a href="#depoimentos">Depoimentos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
 
-        <div id="chat-bubble">
-            <a href="https://wa.me/5553999711669?text=Ol%C3%A1%2C+vim+do+seu+site%2C+gostaria+de+saber+mais+sobre+a+consulta+nutricional%21+"
-                target="_blank" aria-label="Fale comigo pelo WhatsApp e agende sua consulta">
-                Fale Comigo Agora e Agende sua Consulta!
-                <img id="img-wpp" src="imgs/icons/imgwpp.png" alt="Ícone do WhatsApp" loading="lazy">
+  <main>
+
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <span class="hero-badge">Presencial em Bagé-RS · Online para todo o Brasil</span>
+          <h1>Nutrição clínica e esportiva para resultados que duram</h1>
+          <p>
+            Acompanhamento individualizado para você alcançar seus objetivos de saúde,
+            bem-estar e desempenho esportivo — sem dietas radicais e sem promessas impossíveis.
+          </p>
+          <div class="hero-acoes">
+            <a class="btn btn-primario" href="https://wa.me/5553999711669?text=Ol%C3%A1%20Nutri%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20consulta." target="_blank">Agendar minha consulta</a>
+            <a class="btn btn-secundario" href="#servicos">Conhecer os serviços</a>
+          </div>
+          <div class="social" style="margin-top:1.5rem;">
+            <a href="https://www.instagram.com/ciriliacamejonutri/" target="_blank" rel="noopener" class="icone-insta" aria-label="Instagram da Cirília">
+              <svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.8.2 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1 .4 2.2.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.2 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1 .4-2.2.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.8-.2-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.4-1-.4-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c.1-1.2.2-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1-.4 2.2-.4C8.4 2.2 8.8 2.2 12 2.2zm0 1.8c-3.1 0-3.5 0-4.8.1-1.1.1-1.5.2-1.9.3-.5.2-.8.4-1.1.7-.3.3-.5.6-.7 1.1-.1.4-.3.8-.3 1.9-.1 1.3-.1 1.7-.1 4.8s0 3.5.1 4.8c.1 1.1.2 1.5.3 1.9.2.5.4.8.7 1.1.3.3.6.5 1.1.7.4.1.8.3 1.9.3 1.3.1 1.7.1 4.8.1s3.5 0 4.8-.1c1.1-.1 1.5-.2 1.9-.3.5-.2.8-.4 1.1-.7.3-.3.5-.6.7-1.1.1-.4.3-.8.3-1.9.1-1.3.1-1.7.1-4.8s0-3.5-.1-4.8c-.1-1.1-.2-1.5-.3-1.9-.2-.5-.4-.8-.7-1.1-.3-.3-.6-.5-1.1-.7-.4-.1-.8-.3-1.9-.3-1.3-.1-1.7-.1-4.8-.1zm0 3.1a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 1.8a3.2 3.2 0 1 0 0 6.4 3.2 3.2 0 0 0 0-6.4zm5.2-3.1a1.2 1.2 0 1 1 0 2.4 1.2 1.2 0 0 1 0-2.4z"/></svg>
             </a>
+            <a href="https://www.facebook.com/ciriliacamejonutricionista?_rdr" target="_blank" rel="noopener" class="icone-fb" aria-label="Facebook da Cirília">
+              <svg viewBox="0 0 24 24"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.4v7A10 10 0 0 0 22 12z"/></svg>
+            </a>
+          </div>
         </div>
+        <div>
+          <img class="hero-imagem" src="img/nutri-hero.jpg" alt="Cirília Camejo, nutricionista, de jaleco rosa segurando um adipômetro" loading="eager" />
+        </div>
+      </div>
+    </section>
 
-        <section id="container-home" class="container-home">
-            <div class="box-home">
-                <div class="box-left">
-                    <h1>
-                        Olá, eu sou a Cirília, sua futura nutricionista! 💚
-                    </h1>
-                    <p>Sou gaúcha, natural de Bagé–RS, e desde muito cedo descobri minha paixão pela Nutrição. Sempre
-                        tive o desejo de atuar na área da saúde, com o propósito de ajudar pessoas a transformarem suas
-                        vidas por meio de hábitos mais saudáveis. E foi na Nutrição que encontrei a forma mais
-                        verdadeira de fazer a diferença.
-                    </p>
-                    <p>
-                        Hoje, após acompanhar de perto a evolução de inúmeras famílias e indivíduos que confiaram em meu
-                        trabalho, me sinto realizada – mas não satisfeita. Ainda há muitas pessoas que desejo ajudar.
-                        Você pode ser uma delas. Vamos juntos?
-                    </p>
-                    <p>
-                        Atendo tanto de forma presencial quanto online, sempre com foco em uma alimentação saudável,
-                        personalizada e realista. Meu objetivo é te ajudar a alcançar seus objetivos de saúde, bem-estar
-                        e desempenho esportivo, por meio de um acompanhamento individualizado, humano e acolhedor.
-                    </p>
-                    <p>
-                        Se você está em busca de uma profissional comprometida com resultados duradouros e uma vida mais
-                        equilibrada, estou aqui para te apoiar em cada etapa dessa jornada.
-                    </p>
-                    <a class="btn" href="#container-depositions" aria-label="Saiba mais sobre os depoimentos">Saiba
-                        mais</a>
-                </div>
-                <img id="nutri1" src="imgs/download.jpeg" alt="Imagem da nutricionista Cirília Camejo" loading="lazy">
-                <div class="box-redes">
-                    <a href="https://www.instagram.com/ciriliacamejonutri/" target="_blank" aria-label="Instagram">
-                        <button data-feather="instagram"></button>
-                    </a>
-                    <a href="https://m.facebook.com/ciriliacamejonutricionista" target="_blank" aria-label="Facebook">
-                        <button data-feather="facebook"></button>
-                    </a>
-                </div>
-            </div>
-        </section>
+    <!-- ============ SOBRE ============ -->
+    <section id="sobre">
+      <div class="container">
+        <div class="secao-titulo">
+          <h2>Quem cuida de você</h2>
+          <p>Mais de 10 anos de experiência em reeducação alimentar.</p>
+        </div>
+        <div class="cards">
+          <div class="card">
+            <h3>Formação</h3>
+            <p>Graduada em Nutrição pela Universidade da Região da Campanha (URCAMP), atuando profissionalmente desde 2014.</p>
+          </div>
+          <div class="card">
+            <h3>Especialização</h3>
+            <p>Pós-graduada em nutrição clínica e esportiva pelo IPGS e MBA em gestão de negócios e serviços de alimentação.</p>
+          </div>
+          <div class="card">
+            <h3>Abordagem</h3>
+            <p>Reeducação alimentar programada e equilibrada, respeitando a rotina e as individualidades de cada pessoa.</p>
+          </div>
+        </div>
+        <p style="text-align:center; margin-top:2rem; font-weight:600; color:var(--verde-900);">
+          CRN2 13914D
+        </p>
+      </div>
+    </section>
 
-        <section id="container-aboutMe" class="container-aboutMe">
-            <h2>Sobre mim</h2>
-            <div class="box-aboutMe">
-                <div class="box-figure">
-                    <figure>
-                        <div class="boxImg">
-                            <img class="photoImgNutri" src="imgs/img nutri aboutme.png"
-                                alt="Foto da nutricionista Cirília Camejo" loading="lazy">
-                        </div>
-                        <figcaption>
-                            <h3>Cirília Camejo nutricionista</h3>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="description-cards">
-                    <div class="disc-1">
-                        Sou formada em Nutrição pela Universidade da Região da Campanha (URCAMP), e atuo
-                        profissionalmente desde 2014.
-                        <img id="imgGraduation" src="imgs/icons/graduacao.png" alt="Ícone de graduação" loading="lazy">
-                    </div>
-                    <div class="disc-2">
-                        Sou pós-graduada em nutrição clínica e esportiva pelo Instituto de Pesquisas
-                        Ensino e Gestão em Saúde (IPGS); e possuo MBA em gestão de negócios e serviços de alimentação.
-                        <img id="imgBooks" src="imgs/icons/livros.png" alt="Ícone de pós-graduação" loading="lazy">
-                    </div>
-                    <div class="disc-3">
-                        Minha proposta como profissional é auxiliar meu acompanhado em um caminho saudável
-                        e individual, através da reeducação alimentar programada e equilibrada, respeitando todas
-                        individualidades.
-                    </div>
-                </div>
-            </div>
-        </section>
+    <!-- ============ SERVIÇOS ============ -->
+    <section id="servicos" style="background:var(--cinza-100);">
+      <div class="container">
+        <div class="secao-titulo">
+          <h2>Serviços</h2>
+          <p>Atendimento focado no seu objetivo, com plano realista para a sua rotina.</p>
+        </div>
+        <div class="cards">
+          <div class="card">
+            <h3>Emagrecimento</h3>
+            <p>Perda de peso sustentável, sem dietas restritivas que você não consegue manter.</p>
+          </div>
+          <div class="card">
+            <h3>Nutrição esportiva</h3>
+            <p>Planejamento alimentar para melhorar desempenho, recuperação e composição corporal.</p>
+          </div>
+          <div class="card">
+            <h3>Reeducação alimentar</h3>
+            <p>Construção de hábitos saudáveis que se encaixam na sua vida e ficam para sempre.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <section id="container-depositions" class="container-depositions">
-            <h2>Depoimentos</h2>
-            <div class="container-cards">
-                <div class="card" tabindex="0" aria-label="Depoimento de Suzana Matos">
-                    <figure>
-                        <img class="imgperfil" src="imgs/suzana-matos.jpg" alt="Foto da cliente Suzana Matos"
-                            loading="lazy">
-                        <div class="card-depositions">
-                            <figcaption>Suzana Matos</figcaption>
-                            <div class="container-stars">
-                                <img class="star" src="imgs/icons/star.png" alt="Ícone estrela" loading="lazy">
-                                <img class="star" src="imgs/icons/star.png" alt="Ícone estrela" loading="lazy">
-                                <img class="star" src="imgs/icons/star.png" alt="Ícone estrela" loading="lazy">
-                                <img class="star" src="imgs/icons/star.png" alt="Ícone estrela" loading="lazy">
-                                <img class="star" src="imgs/icons/star.png" alt="Ícone estrela" loading="lazy">
-                            </div>
-                            <p>Foi uma grande profissional e pessoa durante todo meu processo de emagrecimento,
-                                me aconselhou como amiga e me atendeu como uma
-                                profissional pra atingir meu objetivo final.</p>
-                        </div>
-                    </figure>
-                </div>
-                <div class="card" tabindex="0" aria-label="Depoimento de Giovana Souza">
-                    <figure>
-                        <img class="imgperfil" src="imgs/giovana-souza.jpg" alt="Foto da cliente Giovana Souza"
-                            loading="lazy">
-                        <div class="card-depositions">
-                            <figcaption>Giovana Souza</figcaption>
-                            <div class="container-stars">
-                                <img class="star" src="imgs/icons/star.png" alt="Ícone estrela" loading="lazy">
-                                <img class="star" src="imgs/icons/star.png" alt="Ícone estrela" loading="lazy">
-                                <img class="star" src="imgs/icons/star.png" alt="Ícone estrela" loading="lazy">
-                                <img class="star" src="imgs/icons/star.png" alt="Ícone estrela" loading="lazy">
-                                <img class="star" src="imgs/icons/star.png" alt="Ícone estrela" loading="lazy">
-                            </div>
-                            <p>Foi uma grande profissional e pessoa durante todo meu processo de emagrecimento,
-                                me aconselhou como amiga e me atendeu como uma
-                                profissional pra atingir meu objetivo final.</p>
-                        </div>
-                    </figure>
-                </div>
-                <div class="card" tabindex="0" aria-label="Depoimento de Cláudia Lima">
-                    <figure>
-                        <img class="imgperfil" src="imgs/claudia-lima.jpg" alt="Foto da cliente Cláudia Lima"
-                            loading="lazy">
-                        <div class="card-depositions">
-                            <figcaption>Cláudia Lima</figcaption>
-                            <div class="container-stars">
-                                <img class="star" src="imgs/icons/star.png" alt="Ícone estrela" loading="lazy">
-                                <img class="star" src="imgs/icons/star.png" alt="Ícone estrela" loading="lazy">
-                                <img class="star" src="imgs/icons/star.png" alt="Ícone estrela" loading="lazy">
-                                <img class="star" src="imgs/icons/star.png" alt="Ícone estrela" loading="lazy">
-                                <img class="star" src="imgs/icons/star.png" alt="Ícone estrela" loading="lazy">
-                            </div>
-                            <p>Foi uma grande profissional e pessoa durante todo meu processo de emagrecimento,
-                                me aconselhou como amiga e me atendeu como uma
-                                profissional pra atingir meu objetivo final.</p>
-                        </div>
-                    </figure>
-                </div>
-            </div>
-        </section>
+    <!-- ============ COMO FUNCIONA ============ -->
+    <section id="como-funciona">
+      <div class="container">
+        <div class="secao-titulo">
+          <h2>Como funciona</h2>
+          <p>Um processo claro, do primeiro contato ao resultado.</p>
+        </div>
+        <div class="cards">
+          <div class="card">
+            <span class="card-numero">1</span>
+            <h3>Avaliação inicial</h3>
+            <p>Anamnese completa: histórico, rotina, objetivos e exames.</p>
+          </div>
+          <div class="card">
+            <span class="card-numero">2</span>
+            <h3>Plano individualizado</h3>
+            <p>Cardápio e metas realistas, montados para a sua realidade.</p>
+          </div>
+          <div class="card">
+            <span class="card-numero">3</span>
+            <h3>Acompanhamento</h3>
+            <p>Ajustes contínuos até o resultado virar hábito duradouro.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    </main>
+    <!-- ============ DEPOIMENTOS ============ -->
+    <section id="depoimentos" class="depoimentos">
+      <div class="container">
+        <div class="secao-titulo">
+          <h2>Quem já confiou, recomenda</h2>
+          <p>Resultados reais de quem passou pelo acompanhamento.</p>
+        </div>
+        <div class="cards">
+          <div class="depoimento">
+            <div class="depoimento-estrelas" aria-label="Avaliação 5 de 5 estrelas">★★★★★</div>
+            <p>"Depois de anos de dietas que não funcionavam, perdi 12 kg em 6 meses sem abrir mão de comer bem. A Cirília me acompanhou como profissional e me tratou como amiga."</p>
+            <span class="depoimento-autor">Suzana Matos</span>
+          </div>
+          <div class="depoimento">
+            <div class="depoimento-estrelas" aria-label="Avaliação 5 de 5 estrelas">★★★★★</div>
+            <p>"Comecei o acompanhamento para melhorar meu desempenho na corrida. Em 3 meses, meu tempo de 5 km caiu e aprendi a me alimentar antes e depois dos treinos."</p>
+            <span class="depoimento-autor">Giovana Souza</span>
+          </div>
+          <div class="depoimento">
+            <div class="depoimento-estrelas" aria-label="Avaliação 5 de 5 estrelas">★★★★★</div>
+            <p>"O plano respeitou minha rotina de trabalho e minhas preferências. Perdi peso com constância e hoje mantenho os hábitos que construí com ela."</p>
+            <span class="depoimento-autor">Cláudia Lima</span>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <script>
-        feather.replace()
-    </script>
+    <!-- ============ CTA FINAL ============ -->
+    <section id="contato" class="cta-final">
+      <div class="container">
+        <h2>Pronta para começar?</h2>
+        <p>Agende sua consulta e dê o primeiro passo para uma vida mais equilibrada.</p>
+        <a class="btn btn-primario" href="https://wa.me/5553999711669?text=Ol%C3%A1%20Nutri%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20consulta." target="_blank" style="margin-top:1rem;">Agendar pelo WhatsApp</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ RODAPÉ ============ -->
+  <footer>
+    <div class="container">
+      <p>Cirília Camejo · Nutricionista · CRN2 13914D</p>
+      <p>Bagé-RS · Atendimento presencial e online</p>
+      <div class="social footer-social">
+        <a href="https://www.instagram.com/ciriliacamejonutri/" target="_blank" rel="noopener" class="icone-insta" aria-label="Instagram da Cirília">
+          <svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.8.2 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1 .4 2.2.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.2 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1 .4-2.2.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.8-.2-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.4-1-.4-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c.1-1.2.2-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1-.4 2.2-.4C8.4 2.2 8.8 2.2 12 2.2zm0 1.8c-3.1 0-3.5 0-4.8.1-1.1.1-1.5.2-1.9.3-.5.2-.8.4-1.1.7-.3.3-.5.6-.7 1.1-.1.4-.3.8-.3 1.9-.1 1.3-.1 1.7-.1 4.8s0 3.5.1 4.8c.1 1.1.2 1.5.3 1.9.2.5.4.8.7 1.1.3.3.6.5 1.1.7.4.1.8.3 1.9.3 1.3.1 1.7.1 4.8.1s3.5 0 4.8-.1c1.1-.1 1.5-.2 1.9-.3.5-.2.8-.4 1.1-.7.3-.3.5-.6.7-1.1.1-.4.3-.8.3-1.9.1-1.3.1-1.7.1-4.8s0-3.5-.1-4.8c-.1-1.1-.2-1.5-.3-1.9-.2-.5-.4-.8-.7-1.1-.3-.3-.6-.5-1.1-.7-.4-.1-.8-.3-1.9-.3-1.3-.1-1.7-.1-4.8-.1zm0 3.1a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 1.8a3.2 3.2 0 1 0 0 6.4 3.2 3.2 0 0 0 0-6.4zm5.2-3.1a1.2 1.2 0 1 1 0 2.4 1.2 1.2 0 0 1 0-2.4z"/></svg>
+        </a>
+        <a href="https://www.facebook.com/ciriliacamejonutricionista?_rdr" target="_blank" rel="noopener" class="icone-fb" aria-label="Facebook da Cirília">
+          <svg viewBox="0 0 24 24"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.4v7A10 10 0 0 0 22 12z"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('menu');
+      const btn = document.querySelector('.nav-toggle');
+      const aberto = menu.classList.toggle('aberto');
+      btn.setAttribute('aria-expanded', aberto);
+      btn.textContent = aberto ? '✕' : '☰';
+    }
+  </script>
+
 </body>
+</html>
