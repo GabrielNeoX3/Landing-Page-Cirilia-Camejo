@@ -6,7 +6,7 @@ no celular**.
 
 > Do primeiro clique ao agendamento no WhatsApp — sem dietas radicais de código.
 
-<img width="600px" src="/imgs/landing-page.png" alt="Preview da seção hero da landing page de nutrição">
+<img width="600px" src="/img/landing-page.png" alt="Preview da seção hero da landing page de nutrição">
 
 **🔗 Acesse a página:** [gabrielneox3.github.io/Landing-Page-Cirilia-Camejo](https://gabrielneox3.github.io/Landing-Page-Cirilia-Camejo/)
 
