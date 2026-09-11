@@ -272,7 +272,22 @@ header {
   margin-bottom: 1rem;
 }
 
-/* ---------- 10. Depoimentos ---------- */
+/* ---------- 10. Sobre: foto + cards lado a lado ---------- */
+.sobre-grid {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.sobre-imagem {
+  border-radius: var(--raio);
+  box-shadow: var(--sombra);
+  width: 100%;
+  object-fit: cover;
+}
+
+/* ---------- 11. Depoimentos ---------- */
 .depoimentos {
   background: var(--cinza-100);
 }
@@ -297,7 +312,7 @@ header {
   color: var(--cinza-900);
 }
 
-/* ---------- 11. CTA final ---------- */
+/* ---------- 12. CTA final ---------- */
 .cta-final {
   background: var(--verde-900);
   color: var(--branco);
@@ -318,7 +333,7 @@ header {
   background: var(--verde-100);
 }
 
-/* ---------- 12. Rodapé ---------- */
+/* ---------- 13. Rodapé ---------- */
 footer {
   background: var(--cinza-900);
   color: #d1d5db;
@@ -336,7 +351,7 @@ footer a {
   margin: 1rem 0;
 }
 
-/* ---------- 13. Responsividade (mobile) ---------- */
+/* ---------- 14. Responsividade (mobile) ---------- */
 @media (max-width: 768px) {
   .hero-grid {
     grid-template-columns: 1fr;
@@ -345,6 +360,11 @@ footer a {
 
   .hero-acoes {
     justify-content: center;
+  }
+
+  .sobre-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
   }
 
   .nav-links {
