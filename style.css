@@ -239,26 +239,21 @@ header {
   margin-bottom: 1.25rem;
 }
 
-.hero-imagem {
-  border-radius: var(--raio);
-  box-shadow: var(--sombra);
-}
-
-/* Hero: container com altura controlada */
+/* Container da foto do hero: trava proporção retrato e corta sem deformar */
 .hero-imagem-wrapper {
-  aspect-ratio: 4 / 5;      /* mantém a proporção retrato da foto */
-  max-height: 560px;        /* trava a altura no desktop */
+  aspect-ratio: 4 / 5;
+  max-height: 560px;
   width: 100%;
   border-radius: var(--raio);
   box-shadow: var(--sombra);
-  overflow: hidden;         /* corta o excesso sem deformar */
+  overflow: hidden;
 }
 
 .hero-imagem {
   width: 100%;
   height: 100%;
-  object-fit: cover;        /* preenche cortando, NÃO esticando */
-  object-position: center top; /* prioriza o rosto, não o jaleco */
+  object-fit: cover;          /* preenche cortando, NÃO esticando */
+  object-position: center top; /* prioriza o rosto */
 }
 
 /* ---------- 9. Cards ---------- */
@@ -377,6 +372,10 @@ footer a {
 
   .hero-acoes {
     justify-content: center;
+  }
+
+  .hero-imagem-wrapper {
+    max-height: none; /* deixa a foto crescer naturalmente no mobile */
   }
 
   .sobre-grid {
